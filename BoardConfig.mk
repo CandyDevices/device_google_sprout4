@@ -20,3 +20,13 @@
 TARGET_OTA_ASSERT_DEVICE := sprout,sprout4
 
 TARGET_RECOVERY_FSTAB := device/google/sprout4/rootdir/root/fstab.sprout
+
+#Rom Optimization
+USE_GRAPHITE := true 
+USE_FSTRICT_FLAGS := true 
+FSTRICT_ALIASING_WARNING_LEVEL := 3 
+USE_BINARY_FLAGS := true 
+USE_EXTRA_CLANG_FLAGS := true 
+USE_LTO := true 
+CANDY_ARM_OPT_LEVEL := -O3
+CANDY_THUMB_OPT_LEVEL := -O3
